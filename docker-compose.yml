@@ -35,7 +35,8 @@ services:
   ports:
     - "8080:8080"
   volumes:
-    - Vproappdata: /usr/local/tomcat/webapps
+    - Vproappdata:
+       driver: local
 
  vproweb:
   build:
